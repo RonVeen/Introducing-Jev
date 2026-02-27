@@ -1,0 +1,38 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My Personal Blog'
+theme = 'PaperMod'
+
+[params]
+    showCodeCopyButtons = true # Allows readers to copy your Java code easily
+    disableSpecial1stPost = true # Ensure first list item uses regular card layout
+
+[menu]
+  [[menu.main]]
+    identifier = "articles"
+    name = "Articles..."
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "shorts"
+    name = "Shorts"
+    url = "/shorts/"
+    weight = 20
+  [[menu.main]]
+    identifier = "books"
+    name = "Books"
+    url = "/books/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai" # High-contrast style great for Java
